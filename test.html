@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <div id="output"></div>
     <script>
       const params = new URLSearchParams(location.search);
-      const x = params.get('x');
-      document.getElementById('output').innerText = x;
+      document.write(params.get('x'));
     </script>
   </body>
 </html>
