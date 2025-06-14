@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head><title>Reflector</title></head>
-<body>
-  <div id="output"></div>
-  <script>
-    const params = new URLSearchParams(location.search);
-    document.getElementById('output').innerHTML = params.get('x');
-  </script>
-</body>
+  <body>
+    <div id="output"></div>
+    <script>
+      const params = new URLSearchParams(location.search);
+      const x = params.get('x');
+      document.getElementById('output').innerText = x;
+    </script>
+  </body>
 </html>
